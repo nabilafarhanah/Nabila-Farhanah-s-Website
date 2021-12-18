@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<head><title>Nabila Farhanah's Website</title></head>
+<body>
+<div>
+<header id="home">
+ <nav>
+  <div class="row">
+  <div class="row logo">
+       <img class="logo-img" src="image/logo1.jpg">
+  <div class= "logo-text">
+  <h2>NABILA ISMAIL</h2>
+ </div>
+</div>
+   
+<ul class="main-nav">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="biodata.html">Biodata</a></li>
+  <li><a href="experience.html">Experience</a></li>
+  <li><a href="education.html">Education</a></li>
+  <li><a href="family.html">Family</a></li>
+  <li><a href="gallery.html">Gallery</a></li>
+</ul>
+        
+</div>
+</nav>
+    
+<div class="txtbox">
+ <center><h2>WELCOME TO NABILA's WEBSITE</h2>
+ <br>
+ <p>YOU ARE NOW GOING TO BE ONE OF THE CHOSEN PERSON TO GET TO KNOW NABILA.<br> BE PREPARED. THIS IS A LONG JOURNEY<p>
+ </div>
+<br>
+<br>
+<audio controls id="myaudio">
+<source src="songs/Lucky.mp3"/>
+</audio>
+<script>
+  var audio = document.getElementById("myaudio");
+  document.onkeydown = function(e) {
+    if (e.keyCode == 83) {
+      audio.pause(); // Press S
+    } else if (e.keyCode == 80) {
+      audio.play(); // Press P
+    }
+  };
+</script>
+</header>  
+
+
+<style>  
+
+@import url(https://fonts.googleapis.com/css?family=Romanesco);
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #6a5acd;
+  color: #6a5acd;
+  font-family: 'Lato', 'Arial', "sans-serif";
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+}
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto 0 auto; 
+}
+
+section {
+  padding: 140px 0;
+}
+.clearfix {zoom:1}
+.clearfix:after,
+.clearfix:before {
+  content: "";
+  clear: both;
+  display: block;
+  display: table;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+}
+
+
+header {
+  background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.8)), url(gif/girl.gif);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+.txtbox {
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+header h2{
+  margin: 0 0 20 0;
+  color: #fff;
+  font-family: "Romanesco";
+  font-size: 400%;
+  font-weight: 500;
+  letter-spacing: 2px;
+  word-spacing: 2px; 
+}
+
+header p {
+  margin: 0 0 5 0;
+  padding: 0;
+  color: #6a5acd;
+  font-size: 90%;
+  font-weight: 300;
+  letter-spacing: 0px;
+  word-spacing: 0px;
+}
+
+
+.logo {
+  float: left;
+  padding: 0;
+  margin: 20px 0px 0px  0px ;
+}
+
+.logo-img {
+  height: 60px;
+  width: auto;
+  float: left;
+}
+
+.logo-text {
+  text-align-last: justify; 
+  margin: 0 0 0 5px;
+}
+
+.logo-text h2 {
+  margin: 0 0 20 0;
+  color: #fff;
+  font-size: 100%;
+  font-weight: 300;
+  letter-spacing: -0.5px;
+  word-spacing: -2px; 
+}
+
+.main-nav {
+  float: right;
+  margin-left: 300px;
+  margin-top: 30px;
+  padding: 0;
+  list-style: none;
+  font-weight: 500;  
+}
+.main-nav li {
+  display: inline-block;
+  margin-left: 40px;
+}
+.main-nav li a:link,
+.main-nav li a:visited{
+  padding: 8px 0;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 80%;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.7s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+  border-bottom: 2px solid #bfa70b;
+
+}
+
+#myaudio{
+  position: absolute;
+  width: 250px;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+</style>
+</body>
+</body>
